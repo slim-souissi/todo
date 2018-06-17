@@ -1,0 +1,11 @@
+def convert_date(myDate):
+    # myDate = "2018-01-25T13:00:20+00:00"
+    year = int(myDate[2:4]) *100000000
+    month = int(myDate[5:7])*1000000
+    day = int(myDate[8:10]) *10000
+    hours = int(myDate[11:13])*100
+    minutes = int(myDate[14:16]) 
+    return year + month + day + hours + minutes 
+        
+a = convert_date("2018-01-25T13:00:20+00:00")       
+print(a) 
